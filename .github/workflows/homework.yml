@@ -24,6 +24,11 @@ jobs:
       - name: Install pytest
         run: |
           pip install pytest
+          pip install requests
       - name: Run tests
         run: |
           pytest -v --tb=no -q
+        continue-on-error: true
+      - name: Natijalar
+        run: |
+          python test/sendtest.py ${{github.actor}} '${{github.repository}}'
