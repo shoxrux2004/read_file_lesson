@@ -10,9 +10,7 @@ def read_file(filename: str) -> list:
         data (list): A list of lines from the file.
     """
     # Open the file
-    data = list(map(int,open(filename, "r").read().split(',')))
     # Read the file
-    return data
+    return 0
 
 #Print list from file
-print(read_file("read_file_2.txt"))
