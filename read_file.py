@@ -9,7 +9,13 @@ def read_file(filename: str) -> list:
         data (list): A list of list of int digits from the file.
     """
     # Open the file
+    f = open(filename).read()
+    f = f.split(",")
+    list_of_integers = []
+    for i in f:
+        list_of_integers.append(int(i))
     # Read the file
-    return 0
+    return list_of_integers
 
 #Print list from file
+print(read_file("data.txt"))
