@@ -10,6 +10,6 @@ def read_file(filename: str) -> list:
     """
     # Open the file
     # Read the file
-    return 0
+    return 0 
 
 #Print list from file
