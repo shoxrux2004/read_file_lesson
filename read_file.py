@@ -1,5 +1,5 @@
 #Rread file and convert to list
-def read_file(filename: str) -> list:
+def read_file(filename: str) -> list[int]:
     """
     Reads a file and returns a list of integers.
 
